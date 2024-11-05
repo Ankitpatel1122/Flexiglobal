@@ -2,4 +2,5 @@ FROM nginx
 
 WORKDIR /usr/share/nginx/html
 
-COPY . .
+# Copy the contents of the dist directory to the Nginx html directory
+COPY ./dist/ .
